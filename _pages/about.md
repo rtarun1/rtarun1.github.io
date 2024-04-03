@@ -1,5 +1,5 @@
 ---
-layout: Portfolio
+layout: about
 title: Portfolio
 permalink: /
 subtitle: Btech in Mechatronics at SRM Institute of Science and Technology 
@@ -10,9 +10,9 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: 
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+News: true # includes a list of news items
+Publications: true # includes a list of papers marked as "selected={true}"
+Projects: true # includes social icons at the bottom of the page
 ---
 I am intreseted in creating robots that aid humans in their day-today-day activities, like the recent project that I am building from ground up Autonomous Wheelchair - that aims to provide mobility solution to people with physical inabilities. The work involves using a stereo camera, LiDAR and GNSS reciever for autonomously navigation in unknown environments.
 
