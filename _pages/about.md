@@ -14,10 +14,10 @@ News: true # includes a list of news items
 Publications: true # includes a list of papers marked as "selected={true}"
 Projects: true # includes social icons at the bottom of the page
 ---
-I am intreseted in creating robots that aid humans in their day-today-day activities, like the recent project that I am building from ground up Autonomous Wheelchair - that aims to provide mobility solution to people with physical inabilities. The work involves using a stereo camera, LiDAR and GNSS reciever for autonomously navigation in unknown environments.
+I'm interested in developing robots that help humans with their daily tasks, such as the Autonomous wheelchair, which I'm now designing from the ground up to provide mobility options to persons with physical limitations. The project entails using a stereo camera, LiDAR, and GNSS receiver to navigate autonomously in unforeseen areas.
 
-Engaging in these projects, I have gained experiance in SLAM, sensor fusion, computer-vision, machine learning, ROS, embedded systems, electronics and Mehcnaical fabrication. Please checkout [my resume](/assets/pdf/my_resume.pdf) for additional information about my work.
+Through these projects, I gained experience with SLAM, sensor fusion, computer vision, machine learning, ROS, embedded systems, electronics, and mechanical fabrication. Check out my résumé for more information about my work.
 
-With my passion for harnessing the power of interdisciplinary robotic systems to tackle real-world challenges, I aim to create robots that do the Dull, Dirty & Dangerous jobs. 
+With my passion for using multidisciplinary robotic systems to solve real-world problems, my goal is to build robots that do the dull, dirty, and dangerous jobs.
 
-I am currently on the lookout for Research Internship Opportunities starting May 2024! Please reach out if you think I would be a good fit for your team.
+I am now looking for research internship opportunities starting in May 2024! Please contact me if you believe I might be a good fit for your team.
