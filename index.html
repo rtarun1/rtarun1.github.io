@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tarun R</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Browser tab icon: robot emoji -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>"
+    />
+    <!-- Apply saved theme before the page paints, so there's no flash of the wrong theme -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          if (saved === "light") document.documentElement.setAttribute("data-theme", "light");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme"><i class="fa-solid fa-sun"></i></button>
+
+    <div class="header">
+      <img src="assets/photo.jpg" alt="Tarun R" />
+      <h1>Tarun R</h1>
+      <div class="summary">
+        I am a graduate researcher at
+        <a href="https://robotics.iiit.ac.in/">Robotics Research Center (RRC)</a> and a MS by
+        Research in CSE candidate at IIIT Hyderabad.
+        <br />
+        <br />
+        My main research interests are at the intersection of 3D computer vision and robotics (and
+        to a lesser degree mechanical designing). I am particularly interested in the development of
+        algorithms for robot perception that enbles better autonomous navigation. Recently, I am more intrested in working with Visual and Inertial sensors for SLAM and relocalization.
+      </div>
+      <div class="last-updated">Last updated: October 13, 2026</div>
+      <div class="socials">
+        <a href="mailto:tarun.ramak@gmail.com"><i class="fa-solid fa-envelope"></i> E-Mail</a> |
+        <a href="https://www.linkedin.com/in/rtarun1/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> |
+        <a href="https://github.com/rtarun1/"><i class="fa-brands fa-github"></i> GitHub</a> |
+        <a href="https://scholar.google.com/citations?user=wqTCR1sAAAAJ&hl=en"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a> 
+        <!-- <a href="pdfs/cv.pdf"><i class="fa-solid fa-file-lines"></i> Resume</a> -->
+      </div>
+    </div>
+
+    <h2>Publications</h2>
+    <div class="entries">
+      <div class="entry">
+        <img src="assets/silica_teaser.png" alt="" />
+        <div class="entry-info">
+          <h3>
+            SILICA: Repurposing Diffusion Priors for Joint Glass Segmentation and Depth Estimation
+          </h3>
+          <div class="authors">
+            <b>Tarun R</b>, Anuj Verma, Laksh Nanwani, Sourav Garg, Madhava Krishna
+          </div>
+          <div class="venue">
+            IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026
+          </div>
+          <div class="links">
+            <a href="https://silica-mirage.github.io/">Project Page</a> |
+            <a href="https://github.com/rtarun1/Silica">Code</a> | 
+            <a href="https://arxiv.org/abs/2607.24249">arXiv</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <img src="assets/crowdsurfer_teaser.png" alt="" />
+        <div class="entry-info">
+          <h3>
+            CrowdSurfer: Sampling Optimization Augmented with Vector-Quantized Variational
+            AutoEncoder for Dense Crowd Navigation
+          </h3>
+          <div class="authors">
+            Naman Kumar<sup>*</sup>, Antareep Singha<sup>*</sup>, Laksh Nanwani<sup>*</sup>, Dhruv
+            Potdar, <b>Tarun R</b>, Fatemeh Rastgar, Simon Idoko, Arun Kumar Singh, Madhava Krishna
+          </div>
+          <div class="venue">
+            IEEE International Conference on Robotics and Automation (ICRA), 2025
+          </div>
+          <div class="links">
+            <a href="https://smart-wheelchair-rrc.github.io/CrowdSurfer-webpage/">Project Page</a> |
+            <a href="https://github.com/Smart-Wheelchair-RRC/CrowdSurfer">Code</a> |
+            <a href="https://arxiv.org/abs/2409.16011">arXiv</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="entries">
+      <!-- Copy this block for each project. Paste your Google Drive video link into the Video href. -->
+      <div class="entry">
+        <img src="assets/traversable_nav.png" alt="" />
+        <div class="entry-info">
+          <h3>Traversability-Aware Indoor Navigation</h3>
+          <div class="venue">2026</div>
+          <p class="description">
+            Used diffusion foundation model priors to segment the traversable floor and estimate depth
+            indoors, and wrote a Numba-based GPU MPPI controller that is soft-constrained to plan
+            trajectories only within the traversable region.
+          </p>
+          <div class="links">
+            <a href="https://docs.google.com/presentation/d/1HJGA-ckb13e8vL0RPHcI3dAf7_zLbNeUpzmmEw1HUL4/edit?usp=sharing">Slides</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <img src="assets/graps_silica.png" alt="" />
+        <div class="entry-info">
+          <h3>Transparent Object Grasping Using Modified SILICA</h3>
+          <div class="venue">2026</div>
+          <p class="description">
+            Trained SILICA with CLIP conditioning to predict glass objects and glass scenes separately,
+            greatly reducing false positives. The resulting segmentation and depth feed NVIDIA GraspGen
+            for grasp generation, with an RRT* planner to reach and pick up the object.
+          </p>
+          <div class="links">
+            <a href="https://docs.google.com/presentation/d/1M7CaCK2XC9zmlt4OtbfCPSrb1htzInrn8kx2631e27w/edit?usp=sharing">Slides</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <img src="assets/omni_mapper.png" alt="" />
+        <div class="entry-info">
+          <h3>Multi-Camera LiDAR Calibration, Time Sync, and Stitching</h3>
+          <div class="venue">2025</div>
+          <p class="description">
+            Wrote a ROS 2 driver and image stitcher for the Insta360 camera, and designed a
+            synchronization method from scratch to align its untimestamped images with a Livox MID-360
+            LiDAR. Also built a targetless extrinsic calibration pipeline for a LiDAR and five RealSense
+            cameras using LightGlue. This setup was used to collect over 2&nbsp;TB of multi-sensor data
+            in a shopping mall.
+          </p>
+          <div class="links">
+            <a href="https://drive.google.com/drive/folders/1kc_CqnsHI6Uzlv163oATFEGltY7R5d6M?usp=drive_link">Slides</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <img src="assets/scout.jpeg" alt="" />
+        <div class="entry-info">
+          <h3>Surfing Scout the Quadruped</h3>
+          <div class="venue">2025</div>
+          <p class="description">
+            Designed a 12-servo controller PCB with micro-ROS firmware in C, and wrote a ROS 2 driver
+            with body-to-leg inverse kinematics so the quadruped can reach target body orientations.
+          </p>
+          <div class="links">
+            <a href="https://drive.google.com/drive/folders/1rBfncwYDKYp0BPgKp80OvCf-qi3Ja8St?usp=sharing">Slides</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Educational Activities</h2>
+    <ul class="activities">
+      <li>
+        <div class="activity-date">Aug 2026 – Present</div>
+        <div>
+          <b>Teaching Assistant</b> for Mobile Robotics (CS7.503), taught by Prof. Madhava
+          Krishna
+          <div class="activity-place">IIIT Hyderabad</div>
+        </div>
+      </li>
+      <li>
+        <div class="activity-date">May – Jun 2026</div>
+        <div>
+          <b>Guest Lecturer</b> for Visual and LiDAR SLAM
+          <div class="activity-place">Robotics Research Center (RRC) Summer School 2026</div>
+        </div>
+      </li>
+      <li>
+        <div class="activity-date">May – Jun 2025</div>
+        <div>
+          <b>Guest Lecturer</b> for Robot Operating System (ROS 2) and Capstone Project
+          <div class="activity-place">Robotics Research Center (RRC) Summer School 2025</div>
+        </div>
+      </li>
+    </ul>
+
+    <footer class="footer">
+      Website design inspired by
+      <a href="https://github.com/roym899/roym899.github.io">roym899.github.io</a>.
+    </footer>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var btn = document.getElementById("theme-toggle");
+
+        function render() {
+          var light = root.getAttribute("data-theme") === "light";
+          btn.innerHTML = light
+            ? '<i class="fa-solid fa-moon"></i>'
+            : '<i class="fa-solid fa-sun"></i>';
+          btn.setAttribute("aria-label", light ? "Switch to dark theme" : "Switch to light theme");
+        }
+
+        btn.addEventListener("click", function () {
+          var light = root.getAttribute("data-theme") === "light";
+          if (light) root.removeAttribute("data-theme");
+          else root.setAttribute("data-theme", "light");
+          try {
+            localStorage.setItem("theme", light ? "dark" : "light");
+          } catch (e) {}
+          render();
+        });
+
+        render();
+      })();
+    </script>
+  </body>
+</html>
