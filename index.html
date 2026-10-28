@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <title>Tarun R</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tarun Ramakrishnan (Tarun R), MS by Research student at IIIT Hyderabad working on robot perception, visual-inertial SLAM and relocalization."
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -29,15 +33,19 @@
 
     <div class="header">
       <img src="assets/photo.jpg" alt="Tarun R" />
-      <h1>Tarun R</h1>
+      <h1>Tarun Ramakrishnan</h1>
       <div class="summary">
-        I am an MS by Research candidate in CSE at IIIT Hyderabad and a graduate researcher at the <a href="https://robotics.iiit.ac.in/">Robotics Research Center (RRC)</a>.
+        I am an MS by Research candidate in CSE at IIIT Hyderabad and a graduate researcher at the
+        <a href="https://robotics.iiit.ac.in/">Robotics Research Center (RRC)</a>, advised by
+        <a href="https://scholar.google.com/citations?user=QDuPGHwAAAAJ&hl=en">Prof. Madhava Krishna</a> and
+        <a href="https://scholar.google.com/citations?user=oVS3HHIAAAAJ&hl=en">Prof. Sourav Garg</a>.
         <br />
         <br />
-        My main research interests are at the intersection of robotics and 3D computer vision. I am particularly interested in the development of
-        algorithms for robot perception that enbles better autonomous navigation. Currently, I am particularly interested in visual-inertial SLAM and relocalization.
+        My research lies at the intersection of <span class="interest">3D computer vision</span> and
+        <span class="interest">robotics</span>, with a focus on robot perception algorithms that enable
+        reliable autonomous navigation. Currently, I am focused on visual-inertial SLAM and relocalization.
       </div>
-      <div class="last-updated">Last updated: October 26, 2026</div>
+      <div class="last-updated">Last updated: October 28, 2026</div>
       <div class="socials">
         <a href="mailto:tarun.ramak@gmail.com"><i class="fa-solid fa-envelope"></i> tarun.ramak@gmail.com</a> |
         <a href="https://www.linkedin.com/in/rtarun1/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> |
@@ -52,9 +60,7 @@
       <div class="entry">
         <img src="assets/silica_teaser.png" alt="" />
         <div class="entry-info">
-          <h3>
-            SILICA: Repurposing Diffusion Priors for Joint Glass Segmentation and Depth Estimation
-          </h3>
+          <h3>SILICA: Repurposing Diffusion Priors for Joint Glass Segmentation and Depth Estimation</h3>
           <div class="authors">
             <b>Tarun R</b>, Anuj Verma, Laksh Nanwani, Sourav Garg, Madhava Krishna
           </div>
@@ -63,7 +69,7 @@
           </div>
           <div class="links">
             <a href="https://silica-mirage.github.io/">Project Page</a> |
-            <a href="https://github.com/rtarun1/Silica">Code</a> | 
+            <a href="https://github.com/rtarun1/Silica">Code</a> |
             <a href="https://arxiv.org/abs/2607.24249">arXiv</a>
           </div>
         </div>
@@ -88,13 +94,13 @@
             <a href="https://github.com/Smart-Wheelchair-RRC/CrowdSurfer">Code</a> |
             <a href="https://arxiv.org/abs/2409.16011">arXiv</a>
           </div>
+          <div class="note"><sup>*</sup> Equal contribution</div>
         </div>
       </div>
-    </div>
 
     <h2>Projects</h2>
     <div class="entries">
-      <!-- Copy this block for each project. Paste your Google Drive video link into the Video href. -->
+      <!-- Copy this block for each project. -->
       <div class="entry">
         <img src="assets/traversable_nav.png" alt="" />
         <div class="entry-info">
@@ -133,11 +139,11 @@
           <h3>Omnidirectional Vision-LiDAR Calibration and Fusion Framework</h3>
           <div class="venue">2025</div>
           <p class="description">
-            Wrote a ROS 2 driver and image stitcher for the Insta360 camera, and designed a
+            Wrote a C++ ROS 2 driver and image stitcher for the Insta360 camera, and designed a
             synchronization method from scratch to align its untimestamped images with a Livox MID-360
-            LiDAR. Also built a targetless extrinsic calibration pipeline for a LiDAR and five RealSense
-            cameras using LightGlue. This setup was used to collect over 2&nbsp;TB of multi-sensor data
-            in a shopping mall.
+            LiDAR. Also built a targetless extrinsic calibration pipeline for the LiDAR, five RealSense
+            cameras and the Insta360 using LightGlue. This setup was used to collect over 2&nbsp;TB of
+            multi-sensor data in a shopping mall.
           </p>
           <div class="links">
             <a href="https://docs.google.com/presentation/d/1MnzzqgODlwQL7HUPpcPNbBCK9KltJvaSegGqFReeRvw/edit?usp=sharing">Slides</a>
@@ -151,8 +157,9 @@
           <h3>Surfing Scout the Quadruped</h3>
           <div class="venue">2025</div>
           <p class="description">
-            Designed a 12-servo controller PCB with micro-ROS firmware in C, and wrote a ROS 2 driver
-            with body-to-leg inverse kinematics so the quadruped can reach target body orientations.
+            Designed a 12-servo controller PCB with micro-ROS firmware in C, and wrote a ROS 2 actuator
+            driver, body-to-leg inverse kinematics, and a C++ IMU-based controller that tracks target
+            body motions.
           </p>
           <div class="links">
             <a href="https://drive.google.com/drive/folders/1rBfncwYDKYp0BPgKp80OvCf-qi3Ja8St?usp=sharing">Slides</a>
@@ -161,14 +168,16 @@
       </div>
     </div>
 
-    <h2>Educational Activities</h2>
+    <h2>Teaching and Service</h2>
     <ul class="activities">
       <li>
-        <div class="activity-date">Aug 2026 – Present</div>
+        <div class="activity-date">Jul 2026 – Present</div>
         <div>
-          <b>Teaching Assistant</b> for Mobile Robotics (CS7.503), taught by Prof. Madhava
-          Krishna
+          <b>Teaching Assistant</b> for Mobile Robotics (CS7.503), taught by Prof. Madhava Krishna
           <div class="activity-place">IIIT Hyderabad</div>
+          <div class="activity-links">
+            <a href="https://mobile-robotics-2026.github.io/">Course Website</a>
+          </div>
         </div>
       </li>
       <li>
@@ -183,6 +192,12 @@
         <div>
           <b>Guest Lecturer</b> for Robot Operating System (ROS 2) and Capstone Project
           <div class="activity-place">Robotics Research Center (RRC) Summer School 2025</div>
+        </div>
+      </li>
+      <li>
+        <div class="activity-date">2025 – Present</div>
+        <div>
+          <b>Delegate Reviewer</b> for IEEE RA-L 2025 and ICRA 2027
         </div>
       </li>
     </ul>

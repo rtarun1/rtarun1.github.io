@@ -7,6 +7,7 @@
   --muted: #8a8f98;
   --link: #8ab4f8;
   --link-visited: #c19ef5;
+  --accent: #f2b56b;
   --button-bg: #23262d;
   --button-border: #3a3e47;
   color-scheme: dark;
@@ -16,9 +17,10 @@
   --bg: #fefefe;
   --text: #454545;
   --heading: #222222;
-  --muted: #999999;
+  --muted: #8a8a8a;
   --link: #1a0dab;
   --link-visited: #681da8;
+  --accent: #b5530f;
   --button-bg: #f2f2f2;
   --button-border: #d0d0d0;
   color-scheme: light;
@@ -32,9 +34,9 @@ body {
     sans-serif;
   color: var(--text);
   font-size: 100%;
-  max-width: 50em;
+  max-width: 56em;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em 1.5em;
   line-height: 1.4;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
@@ -83,10 +85,6 @@ a:visited {
 }
 
 /* ---------- Header ---------- */
-.last-updated {
-  font-size: 0.8em;
-  color: var(--muted);
-}
 .header {
   display: block;
   margin-top: 1.5em; /* leave room for the toggle on small screens */
@@ -101,17 +99,30 @@ a:visited {
   border-radius: 1em;
   margin-left: 1em;
 }
+.last-updated {
+  font-size: 0.8em;
+  color: var(--muted);
+}
+.socials i {
+  margin-right: 0.2em;
+}
+
+/* Research interests in the summary */
+.interest {
+  color: var(--accent);
+  font-weight: 600;
+}
 
 /* ---------- Sections ---------- */
 h2 {
-  margin-top: 1em;
+  margin-top: 1.2em;
   margin-bottom: 0.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--button-border);
 }
 .entries {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
   gap: 0.5em;
 }
 .entry {
@@ -119,7 +130,6 @@ h2 {
   flex-direction: row;
   align-items: flex-start;
   gap: 1em;
-  max-width: inherit;
   padding: 0.5em;
 }
 /* Image on the left of each publication / project */
@@ -136,13 +146,8 @@ h2 {
   flex-grow: 1;
 }
 .entry-info h3 {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 0 0.2em;
   font-size: 100%;
-}
-.entry-info h3 {
-  margin-bottom: 0.2em;
 }
 .entry-info .authors {
   font-size: 88%;
@@ -157,8 +162,13 @@ h2 {
   margin-top: 0.2em;
 }
 .entry-info .description {
-  font-size: 80%;
+  font-size: 85%;
   margin: 0.2em 0;
+}
+.entry-info .note {
+  font-size: 75%;
+  color: var(--muted);
+  margin-top: 0.2em;
 }
 sup {
   vertical-align: top;
@@ -175,19 +185,14 @@ sup {
   }
 }
 
-/* ---------- Social icons ---------- */
-.socials i {
-  margin-right: 0.2em;
-}
-
-/* ---------- Educational activities ---------- */
+/* ---------- Experience / teaching lists ---------- */
 .activities {
   list-style: none;
   padding: 0.5em;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.8em;
+  gap: 0.9em;
 }
 .activities li {
   display: flex;
@@ -196,13 +201,21 @@ sup {
 }
 .activity-date {
   flex-shrink: 0;
-  width: 9em;
+  width: 9.5em;
   color: var(--muted);
 }
 .activity-place {
-  font-size: 85%;
+  font-size: 88%;
   font-style: italic;
   color: var(--muted);
+}
+.activity-desc {
+  font-size: 92%;
+  margin-top: 0.15em;
+}
+.activity-links {
+  font-size: 88%;
+  margin-top: 0.15em;
 }
 @media (max-width: 500px) {
   .activities li {
