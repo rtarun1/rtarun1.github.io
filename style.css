@@ -99,6 +99,14 @@ a:visited {
   border-radius: 1em;
   margin-left: 1em;
 }
+/* Short name shown beside the full name, like on the resume */
+.header h1 .alias {
+  font-size: 0.5em;
+  font-weight: 400;
+  color: var(--muted);
+  margin-left: 0.2em;
+  white-space: nowrap;
+}
 .last-updated {
   font-size: 0.8em;
   color: var(--muted);
