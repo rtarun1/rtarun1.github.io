@@ -113,6 +113,50 @@ a:visited {
   font-weight: 600;
 }
 
+/* Names that show a photo on hover (or tap on phones) */
+.photo-hover {
+  position: relative;
+  white-space: nowrap;
+  border-bottom: 1px dashed var(--muted);
+  cursor: pointer;
+}
+.photo-hover i {
+  font-size: 0.7em;
+  margin-left: 0.3em;
+  color: var(--muted);
+}
+.photo-hover img {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 0.5em);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18em;
+  max-width: 80vw;
+  height: auto;
+  border-radius: 0.6em;
+  border: 1px solid var(--button-border);
+  box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.35);
+  z-index: 20;
+}
+.photo-hover:hover img,
+.photo-hover:focus img {
+  display: block;
+}
+.photo-hover:focus {
+  outline: none;
+}
+/* On phones, center the photo on screen so it never runs off the edge */
+@media (max-width: 500px) {
+  .photo-hover img {
+    position: fixed;
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+  }
+}
+
 /* ---------- Sections ---------- */
 h2 {
   margin-top: 1.2em;
